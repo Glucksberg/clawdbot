@@ -79,6 +79,26 @@ describe("decideSoulEvil", () => {
     });
     expect(result.useEvil).toBe(false);
   });
+
+  it("honors sub-minute purge durations", () => {
+    const config = {
+      agent: {
+        soulEvil: { purge: { at: "00:00", duration: "30s" } },
+        userTimezone: "UTC",
+      },
+    };
+    const active = decideSoulEvil({
+      config,
+      now: new Date("2026-01-01T00:00:20Z"),
+    });
+    const inactive = decideSoulEvil({
+      config,
+      now: new Date("2026-01-01T00:00:40Z"),
+    });
+    expect(active.useEvil).toBe(true);
+    expect(active.reason).toBe("purge");
+    expect(inactive.useEvil).toBe(false);
+  });
 });
 
 describe("applySoulEvilOverride", () => {

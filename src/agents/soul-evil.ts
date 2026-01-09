@@ -59,23 +59,31 @@ function parsePurgeAt(raw?: string): number | null {
   return hour * 60 + minute;
 }
 
-function minutesInTimezone(date: Date, timeZone: string): number | null {
+function timeOfDayMsInTimezone(date: Date, timeZone: string): number | null {
   try {
     const parts = new Intl.DateTimeFormat("en-US", {
       timeZone,
       hour: "2-digit",
       minute: "2-digit",
+      second: "2-digit",
       hourCycle: "h23",
     }).formatToParts(date);
     const map: Record<string, string> = {};
     for (const part of parts) {
       if (part.type !== "literal") map[part.type] = part.value;
     }
-    if (!map.hour || !map.minute) return null;
+    if (!map.hour || !map.minute || !map.second) return null;
     const hour = Number.parseInt(map.hour, 10);
     const minute = Number.parseInt(map.minute, 10);
-    if (!Number.isFinite(hour) || !Number.isFinite(minute)) return null;
-    return hour * 60 + minute;
+    const second = Number.parseInt(map.second, 10);
+    if (
+      !Number.isFinite(hour) ||
+      !Number.isFinite(minute) ||
+      !Number.isFinite(second)
+    ) {
+      return null;
+    }
+    return (hour * 3600 + minute * 60 + second) * 1000 + date.getMilliseconds();
   } catch {
     return null;
   }
@@ -99,18 +107,19 @@ function isWithinDailyPurgeWindow(params: {
   }
   if (!Number.isFinite(durationMs) || durationMs <= 0) return false;
 
-  const durationMinutes = Math.ceil(durationMs / 60000);
-  if (durationMinutes >= 24 * 60) return true;
+  const dayMs = 24 * 60 * 60 * 1000;
+  if (durationMs >= dayMs) return true;
 
-  const nowMinutes = minutesInTimezone(params.now, params.timeZone);
-  if (nowMinutes === null) return false;
+  const nowMs = timeOfDayMsInTimezone(params.now, params.timeZone);
+  if (nowMs === null) return false;
 
-  const endMinutes = startMinutes + durationMinutes;
-  if (endMinutes < 24 * 60) {
-    return nowMinutes >= startMinutes && nowMinutes < endMinutes;
+  const startMs = startMinutes * 60 * 1000;
+  const endMs = startMs + durationMs;
+  if (endMs < dayMs) {
+    return nowMs >= startMs && nowMs < endMs;
   }
-  const wrappedEnd = endMinutes % (24 * 60);
-  return nowMinutes >= startMinutes || nowMinutes < wrappedEnd;
+  const wrappedEnd = endMs % dayMs;
+  return nowMs >= startMs || nowMs < wrappedEnd;
 }
 
 export function decideSoulEvil(params: SoulEvilCheckParams): SoulEvilDecision {
