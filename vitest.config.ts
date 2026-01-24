@@ -34,6 +34,7 @@ export default defineConfig({
       "**/vendor/**",
       "dist/Clawdbot.app/**",
       "**/*.live.test.ts",
+      "**/*.e2e.test.ts",
     ],
     coverage: {
       provider: "v8",

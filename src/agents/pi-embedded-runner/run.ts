@@ -71,6 +71,8 @@ export async function runEmbeddedPiAgent(
   const globalLane = resolveGlobalLane(params.lane);
   const enqueueGlobal =
     params.enqueue ?? ((task, opts) => enqueueCommandInLane(globalLane, task, opts));
+  const enqueueSession =
+    params.enqueue ?? ((task, opts) => enqueueCommandInLane(sessionLane, task, opts));
   const channelHint = params.messageChannel ?? params.messageProvider;
   const resolvedToolResultFormat =
     params.toolResultFormat ??
@@ -79,8 +81,9 @@ export async function runEmbeddedPiAgent(
         ? "markdown"
         : "plain"
       : "markdown");
+  const isProbeSession = params.sessionId?.startsWith("probe-") ?? false;
 
-  return enqueueCommandInLane(sessionLane, () =>
+  return enqueueSession(() =>
     enqueueGlobal(async () => {
       const started = Date.now();
       const resolvedWorkspace = resolveUserPath(params.workspaceDir);
@@ -272,6 +275,7 @@ export async function runEmbeddedPiAgent(
             skillsSnapshot: params.skillsSnapshot,
             prompt,
             images: params.images,
+            disableTools: params.disableTools,
             provider,
             modelId,
             model,
@@ -455,7 +459,7 @@ export async function runEmbeddedPiAgent(
                 cfg: params.config,
                 agentDir: params.agentDir,
               });
-              if (timedOut) {
+              if (timedOut && !isProbeSession) {
                 log.warn(
                   `Profile ${lastProfileId} timed out (possible rate limit). Trying next account...`,
                 );

@@ -2,14 +2,49 @@
 
 Docs: https://docs.clawd.bot
 
-## 2026.1.23
+## 2026.1.23 (Unreleased)
 
 ### Changes
+- Plugins: add optional llm-task JSON-only tool for workflows. (#1498) Thanks @vignesh07.
 - CLI: restart the gateway by default after `clawdbot update`; add `--no-restart` to skip it.
+- CLI: add live auth probes to `clawdbot models status` for per-profile verification.
+- Agents: add Bedrock auto-discovery defaults + config overrides. (#1553) Thanks @fal3.
+- Docs: add cron vs heartbeat decision guide (with Lobster workflow notes). (#1533) Thanks @JustYannicc.
+- Markdown: add per-channel table conversion (bullets for Signal/WhatsApp, code blocks elsewhere). (#1495) Thanks @odysseus0.
+- Tlon: add Urbit channel plugin (DMs, group mentions, thread replies). (#1544) Thanks @wca4a.
 
 ### Fixes
+- Docker: update gateway command in docker-compose and Hetzner guide. (#1514)
+- Voice wake: auto-save wake words on blur/submit across iOS/Android and align limits with macOS.
+- UI: keep the Control UI sidebar visible while scrolling long pages. (#1515) Thanks @pookNast.
+- UI: cache Control UI markdown rendering + memoize chat text extraction to reduce Safari typing jank.
+- Tailscale: retry serve/funnel with sudo only for permission errors and keep original failure details. (#1551) Thanks @sweepies.
+- Agents: add CLI log hint to "agent failed before reply" messages. (#1550) Thanks @sweepies.
+- Discord: limit autoThread mention bypass to bot-owned threads; keep ack reactions mention-gated. (#1511) Thanks @pvoo.
+- Gateway: accept null optional fields in exec approval requests. (#1511) Thanks @pvoo.
+- TUI: forward unknown slash commands (for example, `/context`) to the Gateway.
+- TUI: include Gateway slash commands in autocomplete and `/help`.
+- CLI: skip usage lines in `clawdbot models status` when provider usage is unavailable.
+- CLI: suppress diagnostic session/run noise during auth probes.
+- CLI: hide auth probe timeout warnings from embedded runs.
+- CLI: render auth probe results as a table in `clawdbot models status`.
+- CLI: suppress probe-only embedded logs unless `--verbose` is set.
+- CLI: move auth probe errors below the table to reduce wrapping.
+- CLI: prevent ANSI color bleed when table cells wrap.
+- CLI: explain when auth profiles are excluded by auth.order in probe details.
+- CLI: drop the em dash when the banner tagline wraps to a second line.
+- CLI: inline auth probe errors in status rows to reduce wrapping.
+- Telegram: render markdown in media captions. (#1478)
+- Agents: honor enqueue overrides for embedded runs to avoid queue deadlocks in tests.
+- Daemon: use platform PATH delimiters when building minimal service paths.
+- Tests: skip embedded runner ordering assertion on Windows to avoid CI timeouts.
+- Linux: include env-configured user bin roots in systemd PATH and align PATH audits. (#1512) Thanks @robbyczgw-cla.
+- TUI: render Gateway slash-command replies as system output (for example, `/context`).
+- Media: only parse `MEDIA:` tags when they start the line to avoid stripping prose mentions. (#1206)
 - Media: preserve PNG alpha when possible; fall back to JPEG when still over size cap. (#1491) Thanks @robbyczgw-cla.
 - Agents: treat plugin-only tool allowlists as opt-ins; keep core tools enabled. (#1467)
+- Exec approvals: persist allowlist entry ids to keep macOS allowlist rows stable. (#1521) Thanks @ngutman.
+- MS Teams (plugin): remove `.default` suffix from Graph scopes to avoid double-appending. (#1507) Thanks @Evizero.
 
 ## 2026.1.22
 
