@@ -67,30 +67,23 @@ describe("telegram-tts", () => {
   });
 
   describe("isValidOpenAIModel", () => {
-    it("should accept standard OpenAI TTS models", () => {
+    it("should accept gpt-4o-mini-tts model", () => {
       expect(isValidOpenAIModel("gpt-4o-mini-tts")).toBe(true);
-      expect(isValidOpenAIModel("tts-1")).toBe(true);
-      expect(isValidOpenAIModel("tts-1-hd")).toBe(true);
     });
 
-    it("should accept gpt-4o-mini-tts variants", () => {
-      expect(isValidOpenAIModel("gpt-4o-mini-tts-2025-12-15")).toBe(true);
-      expect(isValidOpenAIModel("gpt-4o-mini-tts-preview")).toBe(true);
-    });
-
-    it("should reject invalid model names", () => {
+    it("should reject other models", () => {
+      expect(isValidOpenAIModel("tts-1")).toBe(false);
+      expect(isValidOpenAIModel("tts-1-hd")).toBe(false);
       expect(isValidOpenAIModel("invalid")).toBe(false);
       expect(isValidOpenAIModel("")).toBe(false);
-      expect(isValidOpenAIModel("tts-2")).toBe(false);
       expect(isValidOpenAIModel("gpt-4")).toBe(false);
     });
   });
 
   describe("OPENAI_TTS_MODELS", () => {
-    it("should contain the expected models", () => {
+    it("should contain only gpt-4o-mini-tts", () => {
       expect(OPENAI_TTS_MODELS).toContain("gpt-4o-mini-tts");
-      expect(OPENAI_TTS_MODELS).toContain("tts-1");
-      expect(OPENAI_TTS_MODELS).toContain("tts-1-hd");
+      expect(OPENAI_TTS_MODELS).toHaveLength(1);
     });
 
     it("should be a non-empty array", () => {
