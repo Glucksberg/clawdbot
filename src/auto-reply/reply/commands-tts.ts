@@ -80,7 +80,12 @@ export const handleTtsCommands: CommandHandler = async (params, allowTextCommand
 
   if (action === "audio") {
     if (!args.trim()) {
-      return { shouldContinue: false, reply: ttsUsage() };
+      return {
+        shouldContinue: false,
+        reply: {
+          text: "🎙️ To use TTS without toggling ON then OFF, just type:\n`/tts audio <message>`\n\nExample: `/tts audio Hello from Clawdbot`",
+        },
+      };
     }
 
     const start = Date.now();
