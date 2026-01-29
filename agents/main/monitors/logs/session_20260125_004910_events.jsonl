@@ -1,0 +1,90 @@
+{
+  "ts": "2026-01-25T00:49:10.516Z",
+  "event_num": 1,
+  "event": "SESSION_START",
+  "pid": "",
+  "details": "Tracker started, poll interval: 2s",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:10.649Z",
+  "event_num": 2,
+  "event": "SPAWN",
+  "pid": "184246",
+  "details": "claude-code 392MB state=S ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:10.766Z",
+  "event_num": 3,
+  "event": "SPAWN",
+  "pid": "681436",
+  "details": "claude-code 840MB state=S ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:10.906Z",
+  "event_num": 4,
+  "event": "SPAWN",
+  "pid": "681515",
+  "details": "mcp-server 67MB state=S parent=681436(claude)",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:11.072Z",
+  "event_num": 5,
+  "event": "SPAWN",
+  "pid": "3064308",
+  "details": "claude-code 378MB state=T ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:11.223Z",
+  "event_num": 6,
+  "event": "SPAWN",
+  "pid": "3386854",
+  "details": "worker-service 133MB state=S ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:11.383Z",
+  "event_num": 7,
+  "event": "SPAWN",
+  "pid": "3386885",
+  "details": "mcp-server 67MB state=S parent=3386854(bun)",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:11.524Z",
+  "event_num": 8,
+  "event": "SPAWN",
+  "pid": "3392243",
+  "details": "chroma 75MB state=S ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:11.647Z",
+  "event_num": 9,
+  "event": "SPAWN",
+  "pid": "3392285",
+  "details": "chroma 394MB state=S ",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:49:18.511Z",
+  "event_num": 10,
+  "event": "SESSION_END",
+  "pid": "",
+  "details": "Tracker stopped by user",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}

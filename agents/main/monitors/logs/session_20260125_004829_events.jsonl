@@ -1,0 +1,126 @@
+{
+  "ts": "2026-01-25T00:48:29.354Z",
+  "event_num": 1,
+  "event": "SESSION_START",
+  "pid": "",
+  "details": "Tracker started, poll interval: 2s",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:29.542Z",
+  "event_num": 2,
+  "event": "SPAWN",
+  "pid": "184246",
+  "details": "claude-code 392MB state=S ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:29.650Z",
+  "event_num": 3,
+  "event": "SPAWN",
+  "pid": "681436",
+  "details": "unknown 831MB state=S ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:29.801Z",
+  "event_num": 4,
+  "event": "SPAWN",
+  "pid": "681515",
+  "details": "mcp-server 67MB state=S parent=681436(claude)",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:29.981Z",
+  "event_num": 5,
+  "event": "SPAWN",
+  "pid": "3064308",
+  "details": "unknown 378MB state=T ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:30.120Z",
+  "event_num": 6,
+  "event": "SPAWN",
+  "pid": "3386854",
+  "details": "worker-service 133MB state=S ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:30.287Z",
+  "event_num": 7,
+  "event": "SPAWN",
+  "pid": "3386885",
+  "details": "mcp-server 67MB state=S parent=3386854(bun)",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:30.412Z",
+  "event_num": 8,
+  "event": "SPAWN",
+  "pid": "3392243",
+  "details": "chroma 75MB state=S ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:30.543Z",
+  "event_num": 9,
+  "event": "SPAWN",
+  "pid": "3392285",
+  "details": "chroma 394MB state=S ",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:30.692Z",
+  "event_num": 10,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "More MCP servers (2) than Claude instances (1) - possible orphans",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:33.146Z",
+  "event_num": 11,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "More MCP servers (2) than Claude instances (1) - possible orphans",
+  "total_mem_mb": 2345,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:35.750Z",
+  "event_num": 12,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "More MCP servers (2) than Claude instances (1) - possible orphans",
+  "total_mem_mb": 2353,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:38.380Z",
+  "event_num": 13,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "More MCP servers (2) than Claude instances (1) - possible orphans",
+  "total_mem_mb": 2354,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T00:48:39.346Z",
+  "event_num": 14,
+  "event": "SESSION_END",
+  "pid": "",
+  "details": "Tracker stopped by user",
+  "total_mem_mb": 2353,
+  "counts": "claude:14,mcp:2"
+}

@@ -1,0 +1,41 @@
+{
+  "repository": "moltbot/moltbot",
+  "tracking_started": "2026-01-29T01:20:00Z",
+  "interval_hours": 4,
+  "snapshots": [
+    {
+      "timestamp": "2026-01-29T01:20:00Z",
+      "prs": {
+        "created": 46,
+        "closed": 6,
+        "merged": 3
+      },
+      "issues": {
+        "created": 56,
+        "closed": 6
+      },
+      "monitor": {
+        "analyzed": 17,
+        "posted": 5,
+        "backlog": 40
+      }
+    },
+    {
+      "timestamp": "2026-01-29T07:02:00Z",
+      "prs": {
+        "created": 45,
+        "closed": 6,
+        "merged": 2
+      },
+      "issues": {
+        "created": 58,
+        "closed": 12
+      },
+      "monitor": {
+        "analyzed": 28,
+        "posted": 5,
+        "backlog": 35
+      }
+    }
+  ]
+}

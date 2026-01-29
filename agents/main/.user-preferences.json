@@ -1,0 +1,6 @@
+{
+  "tts": {
+    "enabled": true,
+    "provider": "openai"
+  }
+}

@@ -1,0 +1,49 @@
+[2026-01-24 19:26:34 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:26:34 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:26:34 UTC] Claude: 15 (4517MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4854MB | Sys avail: 23291MB
+[2026-01-24 19:27:05 UTC] Starting Claude Monitor daemon (interval: 60s)
+[2026-01-24 19:27:06 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:27:06 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:27:06 UTC] Claude: 15 (4520MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4857MB | Sys avail: 23266MB
+[2026-01-24 19:28:08 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:28:08 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:28:08 UTC] Claude: 15 (4508MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4845MB | Sys avail: 23281MB
+[2026-01-24 19:29:09 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:29:09 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:29:09 UTC] Claude: 15 (4512MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4849MB | Sys avail: 23451MB
+[2026-01-24 19:30:10 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:30:10 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:30:10 UTC] Claude: 15 (4508MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4845MB | Sys avail: 23429MB
+[2026-01-24 19:31:11 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:31:11 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:31:11 UTC] Claude: 15 (4500MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4837MB | Sys avail: 23428MB
+[2026-01-24 19:32:12 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:32:12 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:32:12 UTC] Claude: 15 (4501MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4838MB | Sys avail: 23489MB
+[2026-01-24 19:33:14 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:33:14 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:33:14 UTC] Claude: 15 (4506MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4843MB | Sys avail: 23432MB
+[2026-01-24 19:34:15 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:34:15 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:34:15 UTC] Claude: 15 (4500MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4837MB | Sys avail: 23308MB
+[2026-01-24 19:35:16 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:35:16 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:35:16 UTC] Claude: 15 (4505MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4842MB | Sys avail: 23447MB
+[2026-01-24 19:36:17 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:36:17 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:36:17 UTC] Claude: 15 (4507MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4844MB | Sys avail: 23416MB
+[2026-01-24 19:37:19 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:37:19 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:37:19 UTC] Claude: 15 (4494MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4831MB | Sys avail: 23557MB
+[2026-01-24 19:38:20 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:38:20 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:38:20 UTC] Claude: 15 (4497MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4834MB | Sys avail: 23390MB
+[2026-01-24 19:39:21 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:39:21 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:39:21 UTC] Claude: 15 (4504MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4841MB | Sys avail: 23366MB
+[2026-01-24 19:40:22 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:40:22 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:40:22 UTC] Claude: 15 (4507MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4844MB | Sys avail: 23247MB
+[2026-01-24 19:41:23 UTC] ⚠️  Too many Claude instances: 15 (max: 10)
+[2026-01-24 19:41:23 UTC] ⚠️  Multiple stopped Claude processes: 3
+[2026-01-24 19:41:23 UTC] Claude: 15 (4502MB, 3 stopped) | MCP: 5 (337MB, 1 orphans) | Worker: 1 | Chroma: 2 | Total: 4839MB | Sys avail: 23308MB

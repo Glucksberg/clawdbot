@@ -1,0 +1,540 @@
+{
+  "ts": "2026-01-25T02:25:07.400Z",
+  "event_num": 1,
+  "event": "SESSION_START",
+  "pid": "",
+  "details": "Tracker started, poll interval: 2s",
+  "total_mem_mb": 2773,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:07.538Z",
+  "event_num": 2,
+  "event": "SPAWN",
+  "pid": "184246",
+  "details": "claude-code 392MB state=S ",
+  "total_mem_mb": 2773,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:07.639Z",
+  "event_num": 3,
+  "event": "SPAWN",
+  "pid": "681436",
+  "details": "claude-code 829MB state=R ",
+  "total_mem_mb": 2774,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:07.764Z",
+  "event_num": 4,
+  "event": "SPAWN",
+  "pid": "681515",
+  "details": "mcp-server 67MB state=S parent=681436(claude)",
+  "total_mem_mb": 2774,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:07.875Z",
+  "event_num": 5,
+  "event": "SPAWN",
+  "pid": "911588",
+  "details": "claude-code 430MB state=S ",
+  "total_mem_mb": 2775,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:07.986Z",
+  "event_num": 6,
+  "event": "SPAWN",
+  "pid": "921306",
+  "details": "claude-code 3MB state=S ",
+  "total_mem_mb": 2777,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.106Z",
+  "event_num": 7,
+  "event": "SPAWN",
+  "pid": "3064308",
+  "details": "claude-code 378MB state=T ",
+  "total_mem_mb": 2777,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.218Z",
+  "event_num": 8,
+  "event": "SPAWN",
+  "pid": "3386854",
+  "details": "worker-service 129MB state=S ",
+  "total_mem_mb": 2779,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.348Z",
+  "event_num": 9,
+  "event": "SPAWN",
+  "pid": "3386885",
+  "details": "mcp-server 67MB state=S parent=3386854(bun)",
+  "total_mem_mb": 2779,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.452Z",
+  "event_num": 10,
+  "event": "SPAWN",
+  "pid": "3392243",
+  "details": "chroma 75MB state=S ",
+  "total_mem_mb": 2780,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.583Z",
+  "event_num": 11,
+  "event": "SPAWN",
+  "pid": "3392285",
+  "details": "chroma 395MB state=S ",
+  "total_mem_mb": 2782,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:08.706Z",
+  "event_num": 12,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "High Claude instance count: 5 (threshold: 5)",
+  "total_mem_mb": 2783,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:13.407Z",
+  "event_num": 13,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2780,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:15.959Z",
+  "event_num": 14,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2792,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:23.546Z",
+  "event_num": 15,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2813,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:28.692Z",
+  "event_num": 16,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2729,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:31.299Z",
+  "event_num": 17,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2741,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:36.403Z",
+  "event_num": 18,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2703,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:38.982Z",
+  "event_num": 19,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2708,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:41.556Z",
+  "event_num": 20,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2715,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:44.135Z",
+  "event_num": 21,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2710,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:46.704Z",
+  "event_num": 22,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2698,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:49.251Z",
+  "event_num": 23,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2692,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:54.321Z",
+  "event_num": 24,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2699,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:25:59.371Z",
+  "event_num": 25,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2687,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:01.962Z",
+  "event_num": 26,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2689,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:04.597Z",
+  "event_num": 27,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2692,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:09.699Z",
+  "event_num": 28,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2698,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:12.276Z",
+  "event_num": 29,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2694,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:19.861Z",
+  "event_num": 30,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2693,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:32.495Z",
+  "event_num": 31,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2689,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:37.587Z",
+  "event_num": 32,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2708,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:37.755Z",
+  "event_num": 33,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2708,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:40.331Z",
+  "event_num": 34,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2717,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:55.708Z",
+  "event_num": 35,
+  "event": "EXIT",
+  "pid": "921306",
+  "details": "claude-code 3MB lived 108s ",
+  "total_mem_mb": 2734,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:26:58.135Z",
+  "event_num": 36,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2737,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:00.807Z",
+  "event_num": 37,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2764,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:03.535Z",
+  "event_num": 38,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2760,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:06.047Z",
+  "event_num": 39,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2747,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:06.206Z",
+  "event_num": 40,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2748,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:08.745Z",
+  "event_num": 41,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2766,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:16.477Z",
+  "event_num": 42,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2738,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:19.260Z",
+  "event_num": 43,
+  "event": "SPAWN",
+  "pid": "964534",
+  "details": "claude-code 3MB state=S ",
+  "total_mem_mb": 2743,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:19.590Z",
+  "event_num": 44,
+  "event": "ANOMALY",
+  "pid": "",
+  "details": "High Claude instance count: 5 (threshold: 5)",
+  "total_mem_mb": 2744,
+  "counts": "claude:14,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:22.215Z",
+  "event_num": 45,
+  "event": "EXIT",
+  "pid": "964534",
+  "details": "claude-code 3MB lived 3s ",
+  "total_mem_mb": 2760,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:24.530Z",
+  "event_num": 46,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2775,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:29.766Z",
+  "event_num": 47,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2754,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:35.271Z",
+  "event_num": 48,
+  "event": "STATE_CHANGE",
+  "pid": "3392285",
+  "details": "chroma S->R",
+  "total_mem_mb": 2743,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:37.613Z",
+  "event_num": 49,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2754,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:38.065Z",
+  "event_num": 50,
+  "event": "STATE_CHANGE",
+  "pid": "3392285",
+  "details": "chroma R->S",
+  "total_mem_mb": 2756,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:40.416Z",
+  "event_num": 51,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2757,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:43.114Z",
+  "event_num": 52,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2771,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:50.732Z",
+  "event_num": 53,
+  "event": "STATE_CHANGE",
+  "pid": "911588",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2738,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:50.995Z",
+  "event_num": 54,
+  "event": "STATE_CHANGE",
+  "pid": "3392285",
+  "details": "chroma S->R",
+  "total_mem_mb": 2864,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:27:53.582Z",
+  "event_num": 55,
+  "event": "STATE_CHANGE",
+  "pid": "3392285",
+  "details": "chroma R->S",
+  "total_mem_mb": 2740,
+  "counts": "claude:13,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:28:44.326Z",
+  "event_num": 56,
+  "event": "EXIT",
+  "pid": "911588",
+  "details": "claude-code 402MB lived 217s ",
+  "total_mem_mb": 2283,
+  "counts": "claude:12,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:30:46.333Z",
+  "event_num": 57,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2284,
+  "counts": "claude:12,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:30:48.949Z",
+  "event_num": 58,
+  "event": "STATE_CHANGE",
+  "pid": "681436",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2283,
+  "counts": "claude:12,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:35:31.188Z",
+  "event_num": 59,
+  "event": "STATE_CHANGE",
+  "pid": "184246",
+  "details": "claude-code S->R",
+  "total_mem_mb": 2285,
+  "counts": "claude:12,mcp:2"
+}
+{
+  "ts": "2026-01-25T02:35:33.718Z",
+  "event_num": 60,
+  "event": "STATE_CHANGE",
+  "pid": "184246",
+  "details": "claude-code R->S",
+  "total_mem_mb": 2285,
+  "counts": "claude:12,mcp:2"
+}
