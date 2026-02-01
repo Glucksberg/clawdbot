@@ -700,6 +700,28 @@ export const registerTelegramHandlers = ({
         return;
       }
 
+      // Diagnostic logging for issue #5718 - voice notes not passed to agent
+      if (msg.voice || msg.audio) {
+        const audioDebug = {
+          hasVoice: Boolean(msg.voice),
+          hasAudio: Boolean(msg.audio),
+          voiceFileId: msg.voice?.file_id ?? null,
+          audioFileId: msg.audio?.file_id ?? null,
+          voiceMime: msg.voice?.mime_type ?? null,
+          audioMime: msg.audio?.mime_type ?? null,
+          mediaResolved: media !== null,
+          mediaPath: media?.path ?? null,
+          mediaContentType: media?.contentType ?? null,
+        };
+        logVerbose(`telegram audio/voice inbound: ${JSON.stringify(audioDebug)}`);
+        if (!media) {
+          logger.warn(
+            { chatId, audioDebug },
+            "ISSUE #5718: voice/audio message but resolveMedia returned null",
+          );
+        }
+      }
+
       const allMedia = media
         ? [
             {

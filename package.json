@@ -272,5 +272,8 @@
       "apps/macos/.build/**",
       "dist/OpenClaw.app/**"
     ]
+  },
+  "resolutions": {
+    "@sinclair/typebox": "0.34.48"
   }
 }

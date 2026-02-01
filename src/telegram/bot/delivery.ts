@@ -393,7 +393,21 @@ export async function resolveMedia(
     msg.document ??
     msg.audio ??
     msg.voice;
+
+  // Diagnostic logging for issue #5718 - voice notes not passed to agent
+  const mediaDebug = {
+    hasPhoto: Boolean(msg.photo),
+    hasVideo: Boolean(msg.video),
+    hasVideoNote: Boolean(msg.video_note),
+    hasDocument: Boolean(msg.document),
+    hasAudio: Boolean(msg.audio),
+    hasVoice: Boolean(msg.voice),
+    resolvedFileId: m?.file_id ?? null,
+  };
+  logVerbose(`telegram resolveMedia: ${JSON.stringify(mediaDebug)}`);
+
   if (!m?.file_id) {
+    logVerbose(`telegram resolveMedia: returning null (no file_id found)`);
     return null;
   }
   const file = await ctx.getFile();
