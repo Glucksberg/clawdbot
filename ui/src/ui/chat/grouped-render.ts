@@ -118,9 +118,17 @@ export function renderMessageGroup(
       ? "You"
       : normalizedRole === "assistant"
         ? assistantName
-        : normalizedRole;
+        : normalizedRole === "system"
+          ? "System"
+          : normalizedRole;
   const roleClass =
-    normalizedRole === "user" ? "user" : normalizedRole === "assistant" ? "assistant" : "other";
+    normalizedRole === "user"
+      ? "user"
+      : normalizedRole === "assistant"
+        ? "assistant"
+        : normalizedRole === "system"
+          ? "system"
+          : "other";
   const timestamp = new Date(group.timestamp).toLocaleTimeString([], {
     hour: "numeric",
     minute: "2-digit",
@@ -163,7 +171,9 @@ function renderAvatar(role: string, assistant?: Pick<AssistantIdentity, "name" |
         ? assistantName.charAt(0).toUpperCase() || "A"
         : normalized === "tool"
           ? "⚙"
-          : "?";
+          : normalized === "system"
+            ? "ℹ"
+            : "?";
   const className =
     normalized === "user"
       ? "user"
@@ -171,7 +181,9 @@ function renderAvatar(role: string, assistant?: Pick<AssistantIdentity, "name" |
         ? "assistant"
         : normalized === "tool"
           ? "tool"
-          : "other";
+          : normalized === "system"
+            ? "system"
+            : "other";
 
   if (assistantAvatar && normalized === "assistant") {
     if (isAvatarUrl(assistantAvatar)) {
