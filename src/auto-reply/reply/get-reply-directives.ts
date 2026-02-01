@@ -138,6 +138,7 @@ export async function resolveReplyDirectives(params: {
   agentDir: string;
   workspaceDir: string;
   agentCfg: AgentDefaults;
+  agentThinkingDefault?: ThinkLevel;
   sessionCtx: TemplateContext;
   sessionEntry: SessionEntry;
   sessionStore: Record<string, SessionEntry>;
@@ -162,6 +163,7 @@ export async function resolveReplyDirectives(params: {
     cfg,
     agentId,
     agentCfg,
+    agentThinkingDefault,
     agentDir,
     workspaceDir,
     sessionCtx,
@@ -393,6 +395,7 @@ export async function resolveReplyDirectives(params: {
   const resolvedThinkLevel =
     directives.thinkLevel ??
     (sessionEntry?.thinkingLevel as ThinkLevel | undefined) ??
+    agentThinkingDefault ??
     (agentCfg?.thinkingDefault as ThinkLevel | undefined);
 
   const resolvedVerboseLevel =
@@ -463,6 +466,7 @@ export async function resolveReplyDirectives(params: {
     agentId,
     agentDir,
     agentCfg,
+    agentThinkingDefault,
     sessionEntry,
     sessionStore,
     sessionKey,
