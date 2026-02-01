@@ -239,6 +239,17 @@ export function createGatewayHttpServer(opts: {
       return;
     }
 
+    // Health check endpoint for load balancers (no auth required).
+    // Returns 200 OK if the gateway is running. Does not expose any sensitive info.
+    const url = new URL(req.url ?? "/", "http://localhost");
+    if (req.method === "GET" && (url.pathname === "/healthz" || url.pathname === "/health")) {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json; charset=utf-8");
+      res.setHeader("Cache-Control", "no-cache, no-store");
+      res.end(JSON.stringify({ status: "ok" }));
+      return;
+    }
+
     try {
       const configSnapshot = loadConfig();
       const trustedProxies = configSnapshot.gateway?.trustedProxies ?? [];
